@@ -182,7 +182,6 @@ const Products = () => {
     return (
       <div className="flex justify-center items-center min-h-screen">
         <HashLoader />
-        {/* <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-blue-600"></div> */}
       </div>
     );
   }
@@ -198,44 +197,17 @@ const Products = () => {
   return (
     <SidebarProvider>
       <div className="flex min-h-screen w-full py-16">
-        {/* Sidebar */}
         <Sidebar className="bg-gray-50 cursor-pointer">
           <SidebarHeader>
             <div className="flex items-center p-4"></div>
           </SidebarHeader>
           <SidebarContent>
             <ScrollArea className="h-[calc(100vh-8rem)]">
-              {/* Navigation Group */}
               <SidebarGroup>
-                {/* <SidebarGroupLabel>Categories</SidebarGroupLabel> */}
-                <SidebarGroupContent>
-                  {/* <SidebarMenu>
-                    {categories.map((item) => (
-                      <SidebarMenuItem key={item.id}>
-                        <SidebarMenuButton
-                          asChild
-                          onClick={() =>
-                            item.category
-                              ? setSelectedCategories([item.category])
-                              : setSelectedCategories([])
-                          }
-                          className={
-                            selectedCategories.includes(item.category) ||
-                            (!item.category && selectedCategories.length === 0)
-                              ? "bg-blue-100 text-blue-600"
-                              : ""
-                          }
-                        >
-                          <span>{item.label}</span>
-                        </SidebarMenuButton>
-                      </SidebarMenuItem>
-                    ))}
-                  </SidebarMenu> */}
-                </SidebarGroupContent>
+                <SidebarGroupContent></SidebarGroupContent>
               </SidebarGroup>
-              {/* Separator */}
               <SidebarSeparator />
-              {/* Filter Section */}
+
               <FilterSection
                 selectedCategories={selectedCategories}
                 handleCategoryChange={handleCategoryChange}
@@ -247,7 +219,6 @@ const Products = () => {
           </SidebarContent>
         </Sidebar>
 
-        {/* Main Content */}
         <div className="flex-1">
           <header className="flex items-center p-4 border-b">
             <SidebarTrigger className="mr-4" />

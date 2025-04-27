@@ -1,6 +1,5 @@
 import React from "react";
 import Landing from "./components/Landing";
-import Navbar from "./components/Navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Products from "./components/Products";
 import AppLayout from "./layouts/app-layout";
